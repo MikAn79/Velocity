@@ -5,6 +5,8 @@
 
 body {
   font-family: "OpenSansRegular";
+  max-width: 1140px;
+  margin: 0 auto;
   font-weight: 400;
   font-size: 14px;
 }
@@ -50,6 +52,8 @@ body {
 
 .header__bottom {
   background-image: url(../img/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   
 }
 .header-title {
