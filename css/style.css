@@ -1,10 +1,13 @@
-@font-face {
-  font-family: "OpenSansRegular";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+/* @font-face {
+  font-family: "OpenSans";
   src: url(../fonts/OpenSansRegular.woff2);
-}
+} */
 
 body {
-  font-family: "OpenSansRegular";
+  font-family: "OpenSans";
   max-width: 1140px;
   margin: 0 auto;
   font-weight: 400;
@@ -17,9 +20,6 @@ body {
   margin: 0 auto;
 }
 
-.header {
-}
-
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -29,9 +29,9 @@ body {
   font-size: 25px;
   line-height: 25px;
   letter-spacing: 4px;
-  text-transform: uppercase;
   color: #69b9ff;
   padding: 12px 0;
+  text-transform: uppercase;
 }
 
 .header__nav a {
@@ -39,7 +39,8 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
-.header__nav a:hover, a:focus {
+.header__nav a:hover,
+a:focus {
   color: #69b9ff;
   background: none;
   margin: 0;
@@ -54,7 +55,6 @@ body {
   background-image: url(../img/header-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 .header-title {
   font-weight: 400;
@@ -69,26 +69,150 @@ body {
 .header-button {
   font-size: 16px;
   line-height: 21px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 120px 0 210px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.header-button a{
+.header-button a {
   padding: 11px 30px;
   border-radius: 4px;
-  border: #FFFFFF 1px solid;
+  border: #ffffff 1px solid;
   margin: 0px 10px;
 }
 
-.header-button a:focus, a:hover, a:active{
+.header-button a:focus,
+a:hover,
+a:active {
   background-color: #69b9ff;
-  color: #FFFFFF;
+  color: #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  padding: 11px 30px;
+  padding: 10px 30px;
   border-radius: 4px;
   margin: 0px 10px;
   border: none;
+}
+
+.whatdo-title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: 77px;
+  color: #676770;
+}
+.title-items {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #8e8e9c;
+  padding-top: 17px;
+}
+
+.whatdo__card {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+.whatdo__card-1 {
+  border: 1px solid #dcebf7;
+  border-radius: 5px;
+}
+
+.whatdo__card-1 h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  color: #676770;
+  margin-top: 19px;
+}
+
+.whatdo__card-1 p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  color: #6a859c;
+  padding: 14px 16px 23px;
+}
+.img-card1 {
+  margin-top: 36px;
+}
+
+.servises {
+  background-color: #192024;
+  color: #fff;
+}
+
+.servises__title {
+  padding-top: 77px;
+}
+.servises__title h2 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.servises__title p {
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #e8e8e8;
+  padding-top: 17px;
+}
+.servises__card {
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+  margin-top: 60px;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 95px;
+}
+.servises__card h2 {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  padding: 20px 0 23px;
+}
+.servises__card p {
+  max-width: 400px;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 27px;
+  padding: 0 30px;
+}
+.servises__card a {
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 10px 31px 12px;
+}
+.servises__card  a:focus{
+  background:none;
 }
