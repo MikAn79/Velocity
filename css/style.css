@@ -18,6 +18,8 @@ body {
   max-width: 970px;
   padding: 0 15px;
   margin: 0 auto;
+  text-align: center;
+  align-items: center;
 }
 
 .header__top {
@@ -213,6 +215,49 @@ a:active {
   border-radius: 4px;
   padding: 10px 31px 12px;
 }
-.servises__card  a:focus{
-  background:none;
+.servises__card a:focus {
+  background: none;
+}
+
+.tab__nav {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+.tab__nav button {
+  padding: 1px 30px;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #92a0ad;
+  border-radius: 4px;
+}
+.tab__nav button.active {
+  background-color: #2e80b6;
+}
+
+.tab__nav button + button {
+  margin-left: 16px;
+}
+
+.tab__descr {
+  text-align: center;
+  margin: 16px auto 90px;
+  max-width: 700px;
+}
+
+.tab__descr h2 {
+  margin: 16px auto;
+  font-size: 31px;
+  line-height: 36px;
+  text-align: center;
+  color: #676770;
+}
+
+.tab__descr p {
+  font-size: 13px;
+  line-height: 25px;
+  text-align: center;
+  color: #6a859c;
 }
